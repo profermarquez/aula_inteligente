@@ -138,13 +138,20 @@ class AulaController extends Controller
 
 // Si querés, puedo seguir generando los otros CRUDs con el mismo esquema.
 
+
+
+
 # problemas tablas
 DELETE FROM migrations WHERE id = 15;
 DROP TABLE tabla;
 php artisan migrate:fresh
 
+
+
 # Para volver a crear la base de datos en blanco en windows desde el directorio raiz del proyecto
 powershell New-Item -Path .\database\database.sqlite -ItemType File -Force
+
+
 
 # Verificar rutas
 php artisan route:list --name=aulas
